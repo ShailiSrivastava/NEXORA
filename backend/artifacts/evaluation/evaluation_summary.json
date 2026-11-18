@@ -1,0 +1,1859 @@
+{
+  "top_k": 5,
+  "dataset_size": 30,
+  "summary": {
+    "baseline": {
+      "precision@5": 0.4066666666666666,
+      "recall@5": 0.8944444444444444,
+      "mrr": 0.9277777777777777,
+      "ndcg@5": 0.8663435714647452
+    },
+    "reranked": {
+      "precision@5": 0.36666666666666664,
+      "recall@5": 0.8333333333333334,
+      "mrr": 0.9,
+      "ndcg@5": 0.7948636951937829
+    },
+    "personalized": {
+      "precision@5": 0.41333333333333333,
+      "recall@5": 0.9166666666666666,
+      "mrr": 1.0,
+      "ndcg@5": 0.9068945649085206
+    }
+  },
+  "strategy_results": {
+    "baseline": [
+      {
+        "query_id": "q-01",
+        "query": "python backend engineer remote",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-101",
+          "job-122",
+          "job-116",
+          "job-102",
+          "job-124"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.6713860725233041
+      },
+      {
+        "query_id": "q-02",
+        "query": "fastapi sql api developer",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-101",
+          "job-102",
+          "job-115",
+          "job-111",
+          "job-103"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-03",
+        "query": "senior machine learning engineer pytorch remote",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-105",
+          "job-119",
+          "job-114",
+          "job-101",
+          "job-116"
+        ],
+        "relevant": [
+          "job-105",
+          "job-106",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7653606369886217
+      },
+      {
+        "query_id": "q-04",
+        "query": "data scientist python bay area",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-123",
+          "job-106",
+          "job-118",
+          "job-119",
+          "job-103"
+        ],
+        "relevant": [
+          "job-103",
+          "job-106",
+          "job-119"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.6797310500037655
+      },
+      {
+        "query_id": "q-05",
+        "query": "junior sql analyst new york",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-104",
+          "job-117",
+          "job-118",
+          "job-123",
+          "job-103"
+        ],
+        "relevant": [
+          "job-104",
+          "job-117",
+          "job-118"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-06",
+        "query": "frontend react engineer london hybrid",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-107",
+          "job-115",
+          "job-101",
+          "job-103",
+          "job-122"
+        ],
+        "relevant": [
+          "job-107",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-07",
+        "query": "ux designer fintech product",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-107",
+          "job-115",
+          "job-108",
+          "job-112",
+          "job-120"
+        ],
+        "relevant": [
+          "job-108"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 0.3333333333333333,
+        "ndcg@5": 0.5
+      },
+      {
+        "query_id": "q-08",
+        "query": "devops kubernetes aws engineer",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-109",
+          "job-124",
+          "job-116",
+          "job-110",
+          "job-103"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-09",
+        "query": "cloud security engineer remote",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-110",
+          "job-109",
+          "job-116",
+          "job-124",
+          "job-101"
+        ],
+        "relevant": [
+          "job-110"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-10",
+        "query": "qa automation engineer selenium python",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-111",
+          "job-119",
+          "job-101",
+          "job-113",
+          "job-118"
+        ],
+        "relevant": [
+          "job-111"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-11",
+        "query": "product manager ai tools roadmap",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-112",
+          "job-120",
+          "job-119",
+          "job-118",
+          "job-111"
+        ],
+        "relevant": [
+          "job-112",
+          "job-120"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-12",
+        "query": "nlp research scientist retrieval systems",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-113",
+          "job-119",
+          "job-118",
+          "job-103",
+          "job-104"
+        ],
+        "relevant": [
+          "job-113",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-13",
+        "query": "computer vision engineer deep learning",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-114",
+          "job-105",
+          "job-119",
+          "job-112",
+          "job-103"
+        ],
+        "relevant": [
+          "job-114"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-14",
+        "query": "full stack engineer node react",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-115",
+          "job-107",
+          "job-112",
+          "job-116",
+          "job-124"
+        ],
+        "relevant": [
+          "job-101",
+          "job-115"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.6131471927654584
+      },
+      {
+        "query_id": "q-15",
+        "query": "sre observability kubernetes monitoring",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-116",
+          "job-124",
+          "job-109",
+          "job-110",
+          "job-102"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-16",
+        "query": "data engineer spark etl remote",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-103",
+          "job-101",
+          "job-109",
+          "job-110",
+          "job-120"
+        ],
+        "relevant": [
+          "job-103",
+          "job-123"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.6131471927654584
+      },
+      {
+        "query_id": "q-17",
+        "query": "data analyst power bi healthcare",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-104",
+          "job-103",
+          "job-118",
+          "job-123",
+          "job-108"
+        ],
+        "relevant": [
+          "job-104",
+          "job-117",
+          "job-118"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      },
+      {
+        "query_id": "q-18",
+        "query": "mlops engineer ai platform",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-119",
+          "job-124",
+          "job-109",
+          "job-105",
+          "job-116"
+        ],
+        "relevant": [
+          "job-105",
+          "job-109",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.7328286204777911
+      },
+      {
+        "query_id": "q-19",
+        "query": "backend java spring developer chicago",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-121",
+          "job-122",
+          "job-115",
+          "job-107",
+          "job-120"
+        ],
+        "relevant": [
+          "job-101",
+          "job-121"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.6131471927654584
+      },
+      {
+        "query_id": "q-20",
+        "query": "ruby rails engineer remote",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-122",
+          "job-101",
+          "job-116",
+          "job-103",
+          "job-118"
+        ],
+        "relevant": [
+          "job-101",
+          "job-122"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-21",
+        "query": "warehouse analytics engineer sql dbt",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-123",
+          "job-103",
+          "job-104",
+          "job-118",
+          "job-108"
+        ],
+        "relevant": [
+          "job-103",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-22",
+        "query": "kubernetes platform engineer remote",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-109",
+          "job-124",
+          "job-116",
+          "job-110",
+          "job-101"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-23",
+        "query": "product analyst sql experimentation",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-118",
+          "job-104",
+          "job-106",
+          "job-117",
+          "job-103"
+        ],
+        "relevant": [
+          "job-104",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7653606369886217
+      },
+      {
+        "query_id": "q-24",
+        "query": "llm retrieval engineer prompt design",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-119",
+          "job-113",
+          "job-108",
+          "job-118",
+          "job-111"
+        ],
+        "relevant": [
+          "job-113",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-25",
+        "query": "remote product manager analytics",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-118",
+          "job-120",
+          "job-103",
+          "job-104",
+          "job-112"
+        ],
+        "relevant": [
+          "job-112",
+          "job-118",
+          "job-120"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9469024295259745
+      },
+      {
+        "query_id": "q-26",
+        "query": "python data analyst power bi",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-103",
+          "job-104",
+          "job-123",
+          "job-118",
+          "job-106"
+        ],
+        "relevant": [
+          "job-104",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.7328286204777911
+      },
+      {
+        "query_id": "q-27",
+        "query": "deep learning opencv vision systems",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-114",
+          "job-105",
+          "job-119",
+          "job-112",
+          "job-124"
+        ],
+        "relevant": [
+          "job-114"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-28",
+        "query": "security cloud iam terraform",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-110",
+          "job-109",
+          "job-124",
+          "job-116",
+          "job-103"
+        ],
+        "relevant": [
+          "job-110",
+          "job-124"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9197207891481876
+      },
+      {
+        "query_id": "q-29",
+        "query": "backend engineer python sql docker",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-101",
+          "job-102",
+          "job-103",
+          "job-115",
+          "job-121"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102",
+          "job-122"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7653606369886217
+      },
+      {
+        "query_id": "q-30",
+        "query": "analytics engineer sql warehouse",
+        "strategy": "baseline",
+        "retrieved": [
+          "job-123",
+          "job-103",
+          "job-104",
+          "job-118",
+          "job-108"
+        ],
+        "relevant": [
+          "job-103",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9674679834891693
+      }
+    ],
+    "reranked": [
+      {
+        "query_id": "q-01",
+        "query": "python backend engineer remote",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-124",
+          "job-101",
+          "job-119",
+          "job-113",
+          "job-102"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 0.5,
+        "ndcg@5": 0.4776237035032179
+      },
+      {
+        "query_id": "q-02",
+        "query": "fastapi sql api developer",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-101",
+          "job-102",
+          "job-122",
+          "job-115",
+          "job-121"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-03",
+        "query": "senior machine learning engineer pytorch remote",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-105",
+          "job-101",
+          "job-102",
+          "job-124",
+          "job-119"
+        ],
+        "relevant": [
+          "job-105",
+          "job-106",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.6508205185601091
+      },
+      {
+        "query_id": "q-04",
+        "query": "data scientist python bay area",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-123",
+          "job-124",
+          "job-118",
+          "job-119",
+          "job-113"
+        ],
+        "relevant": [
+          "job-103",
+          "job-106",
+          "job-119"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.3333333333333333,
+        "mrr": 0.25,
+        "ndcg@5": 0.20210734650054757
+      },
+      {
+        "query_id": "q-05",
+        "query": "junior sql analyst new york",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-123",
+          "job-122",
+          "job-101",
+          "job-118",
+          "job-117"
+        ],
+        "relevant": [
+          "job-104",
+          "job-117",
+          "job-118"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 0.25,
+        "ndcg@5": 0.38364913903790027
+      },
+      {
+        "query_id": "q-06",
+        "query": "frontend react engineer london hybrid",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-107",
+          "job-101",
+          "job-122",
+          "job-102",
+          "job-115"
+        ],
+        "relevant": [
+          "job-107",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.8503449055347546
+      },
+      {
+        "query_id": "q-07",
+        "query": "ux designer fintech product",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-108",
+          "job-102",
+          "job-119",
+          "job-105",
+          "job-112"
+        ],
+        "relevant": [
+          "job-108"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-08",
+        "query": "devops kubernetes aws engineer",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-109",
+          "job-124",
+          "job-116",
+          "job-110",
+          "job-123"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-09",
+        "query": "cloud security engineer remote",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-116",
+          "job-110",
+          "job-109",
+          "job-101",
+          "job-102"
+        ],
+        "relevant": [
+          "job-110"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 0.5,
+        "ndcg@5": 0.6309297535714575
+      },
+      {
+        "query_id": "q-10",
+        "query": "qa automation engineer selenium python",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-111",
+          "job-123",
+          "job-119",
+          "job-124",
+          "job-114"
+        ],
+        "relevant": [
+          "job-111"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-11",
+        "query": "product manager ai tools roadmap",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-112",
+          "job-120",
+          "job-119",
+          "job-111",
+          "job-118"
+        ],
+        "relevant": [
+          "job-112",
+          "job-120"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-12",
+        "query": "nlp research scientist retrieval systems",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-113",
+          "job-119",
+          "job-123",
+          "job-124",
+          "job-101"
+        ],
+        "relevant": [
+          "job-113",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-13",
+        "query": "computer vision engineer deep learning",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-114",
+          "job-124",
+          "job-105",
+          "job-102",
+          "job-119"
+        ],
+        "relevant": [
+          "job-114"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-14",
+        "query": "full stack engineer node react",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-115",
+          "job-107",
+          "job-101",
+          "job-122",
+          "job-102"
+        ],
+        "relevant": [
+          "job-101",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9197207891481876
+      },
+      {
+        "query_id": "q-15",
+        "query": "sre observability kubernetes monitoring",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-116",
+          "job-109",
+          "job-124",
+          "job-102",
+          "job-123"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-16",
+        "query": "data engineer spark etl remote",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-103",
+          "job-101",
+          "job-123",
+          "job-102",
+          "job-124"
+        ],
+        "relevant": [
+          "job-103",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9197207891481876
+      },
+      {
+        "query_id": "q-17",
+        "query": "data analyst power bi healthcare",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-104",
+          "job-101",
+          "job-123",
+          "job-118",
+          "job-119"
+        ],
+        "relevant": [
+          "job-104",
+          "job-117",
+          "job-118"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.6713860725233041
+      },
+      {
+        "query_id": "q-18",
+        "query": "mlops engineer ai platform",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-109",
+          "job-105",
+          "job-102",
+          "job-101",
+          "job-110"
+        ],
+        "relevant": [
+          "job-105",
+          "job-109",
+          "job-124"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7653606369886217
+      },
+      {
+        "query_id": "q-19",
+        "query": "backend java spring developer chicago",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-121",
+          "job-122",
+          "job-101",
+          "job-124",
+          "job-119"
+        ],
+        "relevant": [
+          "job-101",
+          "job-121"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9197207891481876
+      },
+      {
+        "query_id": "q-20",
+        "query": "ruby rails engineer remote",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-122",
+          "job-124",
+          "job-102",
+          "job-119",
+          "job-109"
+        ],
+        "relevant": [
+          "job-101",
+          "job-122"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.6131471927654584
+      },
+      {
+        "query_id": "q-21",
+        "query": "warehouse analytics engineer sql dbt",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-123",
+          "job-118",
+          "job-117",
+          "job-106",
+          "job-101"
+        ],
+        "relevant": [
+          "job-103",
+          "job-123"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.6131471927654584
+      },
+      {
+        "query_id": "q-22",
+        "query": "kubernetes platform engineer remote",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-109",
+          "job-124",
+          "job-116",
+          "job-110",
+          "job-102"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-23",
+        "query": "product analyst sql experimentation",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-118",
+          "job-106",
+          "job-122",
+          "job-104",
+          "job-123"
+        ],
+        "relevant": [
+          "job-104",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.8529278650606567
+      },
+      {
+        "query_id": "q-24",
+        "query": "llm retrieval engineer prompt design",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-119",
+          "job-113",
+          "job-105",
+          "job-115",
+          "job-110"
+        ],
+        "relevant": [
+          "job-113",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-25",
+        "query": "remote product manager analytics",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-120",
+          "job-123",
+          "job-101",
+          "job-124",
+          "job-117"
+        ],
+        "relevant": [
+          "job-112",
+          "job-118",
+          "job-120"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.3333333333333333,
+        "mrr": 1.0,
+        "ndcg@5": 0.46927872602275644
+      },
+      {
+        "query_id": "q-26",
+        "query": "python data analyst power bi",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-123",
+          "job-124",
+          "job-119",
+          "job-118",
+          "job-103"
+        ],
+        "relevant": [
+          "job-104",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.6713860725233041
+      },
+      {
+        "query_id": "q-27",
+        "query": "deep learning opencv vision systems",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-114",
+          "job-124",
+          "job-119",
+          "job-102",
+          "job-105"
+        ],
+        "relevant": [
+          "job-114"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-28",
+        "query": "security cloud iam terraform",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-110",
+          "job-124",
+          "job-109",
+          "job-123",
+          "job-119"
+        ],
+        "relevant": [
+          "job-110",
+          "job-124"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-29",
+        "query": "backend engineer python sql docker",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-123",
+          "job-102",
+          "job-101",
+          "job-124",
+          "job-103"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102",
+          "job-122"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 0.5,
+        "ndcg@5": 0.5307212739772434
+      },
+      {
+        "query_id": "q-30",
+        "query": "analytics engineer sql warehouse",
+        "strategy": "reranked",
+        "retrieved": [
+          "job-123",
+          "job-122",
+          "job-103",
+          "job-117",
+          "job-101"
+        ],
+        "relevant": [
+          "job-103",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      }
+    ],
+    "personalized": [
+      {
+        "query_id": "q-01",
+        "query": "python backend engineer remote",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-101",
+          "job-118",
+          "job-103",
+          "job-102",
+          "job-122"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.6713860725233041
+      },
+      {
+        "query_id": "q-02",
+        "query": "fastapi sql api developer",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-101",
+          "job-102",
+          "job-123",
+          "job-118",
+          "job-103"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-03",
+        "query": "senior machine learning engineer pytorch remote",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-105",
+          "job-106",
+          "job-101",
+          "job-124",
+          "job-113"
+        ],
+        "relevant": [
+          "job-105",
+          "job-106",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7653606369886217
+      },
+      {
+        "query_id": "q-04",
+        "query": "data scientist python bay area",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-106",
+          "job-101",
+          "job-123",
+          "job-118",
+          "job-103"
+        ],
+        "relevant": [
+          "job-103",
+          "job-106",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.6508205185601091
+      },
+      {
+        "query_id": "q-05",
+        "query": "junior sql analyst new york",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-104",
+          "job-117",
+          "job-118",
+          "job-123",
+          "job-122"
+        ],
+        "relevant": [
+          "job-104",
+          "job-117",
+          "job-118"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-06",
+        "query": "frontend react engineer london hybrid",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-107",
+          "job-115",
+          "job-122",
+          "job-102",
+          "job-121"
+        ],
+        "relevant": [
+          "job-107",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-07",
+        "query": "ux designer fintech product",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-108",
+          "job-121",
+          "job-102",
+          "job-105",
+          "job-115"
+        ],
+        "relevant": [
+          "job-108"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-08",
+        "query": "devops kubernetes aws engineer",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-109",
+          "job-124",
+          "job-110",
+          "job-116",
+          "job-102"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9674679834891693
+      },
+      {
+        "query_id": "q-09",
+        "query": "cloud security engineer remote",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-110",
+          "job-109",
+          "job-124",
+          "job-116",
+          "job-101"
+        ],
+        "relevant": [
+          "job-110"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-10",
+        "query": "qa automation engineer selenium python",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-111",
+          "job-123",
+          "job-114",
+          "job-103",
+          "job-102"
+        ],
+        "relevant": [
+          "job-111"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-11",
+        "query": "product manager ai tools roadmap",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-112",
+          "job-120",
+          "job-119",
+          "job-106",
+          "job-113"
+        ],
+        "relevant": [
+          "job-112",
+          "job-120"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-12",
+        "query": "nlp research scientist retrieval systems",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-113",
+          "job-119",
+          "job-124",
+          "job-101",
+          "job-105"
+        ],
+        "relevant": [
+          "job-113",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-13",
+        "query": "computer vision engineer deep learning",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-114",
+          "job-105",
+          "job-102",
+          "job-111",
+          "job-103"
+        ],
+        "relevant": [
+          "job-114"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-14",
+        "query": "full stack engineer node react",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-115",
+          "job-107",
+          "job-122",
+          "job-121",
+          "job-101"
+        ],
+        "relevant": [
+          "job-101",
+          "job-115"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.8503449055347546
+      },
+      {
+        "query_id": "q-15",
+        "query": "sre observability kubernetes monitoring",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-116",
+          "job-124",
+          "job-101",
+          "job-109",
+          "job-118"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9674679834891693
+      },
+      {
+        "query_id": "q-16",
+        "query": "data engineer spark etl remote",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-103",
+          "job-118",
+          "job-101",
+          "job-123",
+          "job-122"
+        ],
+        "relevant": [
+          "job-103",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.8772153153380493
+      },
+      {
+        "query_id": "q-17",
+        "query": "data analyst power bi healthcare",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-117",
+          "job-104",
+          "job-118",
+          "job-101",
+          "job-123"
+        ],
+        "relevant": [
+          "job-104",
+          "job-117",
+          "job-118"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-18",
+        "query": "mlops engineer ai platform",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-105",
+          "job-102",
+          "job-109",
+          "job-103",
+          "job-101"
+        ],
+        "relevant": [
+          "job-105",
+          "job-109",
+          "job-124"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      },
+      {
+        "query_id": "q-19",
+        "query": "backend java spring developer chicago",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-121",
+          "job-122",
+          "job-115",
+          "job-123",
+          "job-118"
+        ],
+        "relevant": [
+          "job-101",
+          "job-121"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 0.5,
+        "mrr": 1.0,
+        "ndcg@5": 0.6131471927654584
+      },
+      {
+        "query_id": "q-20",
+        "query": "ruby rails engineer remote",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-122",
+          "job-118",
+          "job-103",
+          "job-101",
+          "job-107"
+        ],
+        "relevant": [
+          "job-101",
+          "job-122"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.8772153153380493
+      },
+      {
+        "query_id": "q-21",
+        "query": "warehouse analytics engineer sql dbt",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-123",
+          "job-103",
+          "job-118",
+          "job-106",
+          "job-101"
+        ],
+        "relevant": [
+          "job-103",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-22",
+        "query": "kubernetes platform engineer remote",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-124",
+          "job-116",
+          "job-109",
+          "job-110",
+          "job-101"
+        ],
+        "relevant": [
+          "job-109",
+          "job-116",
+          "job-124"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-23",
+        "query": "product analyst sql experimentation",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-118",
+          "job-103",
+          "job-123",
+          "job-106",
+          "job-117"
+        ],
+        "relevant": [
+          "job-104",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.7039180890341347
+      },
+      {
+        "query_id": "q-24",
+        "query": "llm retrieval engineer prompt design",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-119",
+          "job-113",
+          "job-105",
+          "job-118",
+          "job-103"
+        ],
+        "relevant": [
+          "job-113",
+          "job-119"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-25",
+        "query": "remote product manager analytics",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-120",
+          "job-118",
+          "job-112",
+          "job-117",
+          "job-122"
+        ],
+        "relevant": [
+          "job-112",
+          "job-118",
+          "job-120"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-26",
+        "query": "python data analyst power bi",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-118",
+          "job-123",
+          "job-103",
+          "job-104",
+          "job-106"
+        ],
+        "relevant": [
+          "job-104",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9674679834891693
+      },
+      {
+        "query_id": "q-27",
+        "query": "deep learning opencv vision systems",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-114",
+          "job-102",
+          "job-105",
+          "job-103",
+          "job-124"
+        ],
+        "relevant": [
+          "job-114"
+        ],
+        "precision@5": 0.2,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      },
+      {
+        "query_id": "q-28",
+        "query": "security cloud iam terraform",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-110",
+          "job-109",
+          "job-124",
+          "job-101",
+          "job-116"
+        ],
+        "relevant": [
+          "job-110",
+          "job-124"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 0.9197207891481876
+      },
+      {
+        "query_id": "q-29",
+        "query": "backend engineer python sql docker",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-101",
+          "job-103",
+          "job-118",
+          "job-102",
+          "job-123"
+        ],
+        "relevant": [
+          "job-101",
+          "job-102",
+          "job-122"
+        ],
+        "precision@5": 0.4,
+        "recall@5": 0.6666666666666666,
+        "mrr": 1.0,
+        "ndcg@5": 0.6713860725233041
+      },
+      {
+        "query_id": "q-30",
+        "query": "analytics engineer sql warehouse",
+        "strategy": "personalized",
+        "retrieved": [
+          "job-123",
+          "job-118",
+          "job-103",
+          "job-117",
+          "job-122"
+        ],
+        "relevant": [
+          "job-103",
+          "job-118",
+          "job-123"
+        ],
+        "precision@5": 0.6,
+        "recall@5": 1.0,
+        "mrr": 1.0,
+        "ndcg@5": 1.0
+      }
+    ]
+  }
+}
